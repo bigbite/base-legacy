@@ -1,0 +1,36 @@
+/*--------------------------------------------------*\
+  Nav
+\*--------------------------------------------------*/
+
+.nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+
+  /**
+   * Elements
+   */
+  &__item {
+    display: inline-block;
+  }
+
+  &__link {
+    // ...
+    display: inline-block;
+  }
+
+
+  /**
+   * Modifiers
+   */
+  &--primary {
+    // ...
+    display: inline-block;
+  }
+
+  &--secondary {
+    // ...
+    display: inline-block;
+  }
+}

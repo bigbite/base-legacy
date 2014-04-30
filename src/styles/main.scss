@@ -1,0 +1,35 @@
+/*--------------------------------------------------*\
+  Stucture:
+  =========
+    - vendor:   Vendor styles
+    - utils:    Any utils that _don't_ output code
+    - base:     Base styles
+    - objects:  Reusable singular objects
+    - modules:  Modules typically contain multiple objects
+    - pages:    Any page specific styles
+\*--------------------------------------------------*/
+
+// Vendor
+@import 'vendor/normalize';
+
+// Utils
+@import 'utils/functions';
+@import 'utils/mixins';
+@import 'utils/colours';
+@import 'utils/grid-settings';
+
+// Base
+@import 'base/base';
+
+// Objects
+@import 'objects/nav';
+
+// Modules
+@import 'modules/page-foot';
+@import 'modules/page-head';
+
+// Pages
+@import 'pages/home';
+
+// Helpers, required last
+@import 'base/helpers';

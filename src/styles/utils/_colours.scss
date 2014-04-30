@@ -1,0 +1,33 @@
+/*--------------------------------------------------*\
+  Colour palette
+\*--------------------------------------------------*/
+
+$palettes: (
+
+  // Primary
+  primary: (
+    base: #992A2D,
+    dark: #ccc
+  ),
+
+  // Secondary
+  secondary: (
+    base: #992A2D,
+  ),
+
+  // Accent
+  accent: (
+    base: #992A2D,
+  ),
+
+  // Grey
+  grey: (
+    base: #666,
+    x-light: #eee,
+    light: #bbb,
+    mid-light: #ccc,
+    mid-dark: #777,
+    dark: #333,
+    x-dark: #111
+  )
+);
