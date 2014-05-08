@@ -15,7 +15,7 @@ gulp.task('watch', function() {
 
   gulp.watch(global.config.src + '/styles/**', ['styles']);
   gulp.watch(global.config.src + '/scripts/**', ['scripts']);
-  gulp.watch(global.config.src + '/images/**/*.{png,jpg,jpeg,gif}', ['images']);
+  gulp.watch(global.config.src + '/images/**/*.{png,jpg,jpeg,gif}', ['imagemin']);
   gulp.watch(global.config.src + '/images/**/*.{svg}', ['svg']);
   gulp.watch(global.config.src + '/static/**', ['static']);
 
