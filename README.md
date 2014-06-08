@@ -49,7 +49,7 @@ gulp watch -s
 ```
 
 #### Static Connect HTTP server
-Starts a static HTTP server using [Connect](https://github.com/senchalabs/connect)
+Starts a static HTTP server using [Connect](https://github.com/senchalabs/connect):
 
 ```
 gulp watch -c
