@@ -1,3 +1,17 @@
 /*--------------------------------------------------*\
   Grid Settings
 \*--------------------------------------------------*/
+
+$border-box-sizing: false;
+$column: 65px;
+$gutter: 40px;
+$grid-columns: 12;
+$max-width: 1220px;
+
+$breakpoints: (
+  xxlarge: new-breakpoint(max-width 1280px  12),
+  xlarge:  new-breakpoint(max-width 960px  12),
+  large:   new-breakpoint(max-width 760px  12),
+  medium:  new-breakpoint(max-width 540px  12),
+  small:   new-breakpoint(max-width 320px  12),
+);

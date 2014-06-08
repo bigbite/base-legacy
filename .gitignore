@@ -42,3 +42,9 @@ build/**/*.scss
 
 # Local testing folder
 testing
+
+# Vagrant
+.vagrant
+
+# Web/PHPstorm
+.idea

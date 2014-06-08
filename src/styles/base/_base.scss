@@ -3,5 +3,16 @@
 \*--------------------------------------------------*/
 
 html {
+  overflow-y: scroll;
+  min-height: 100%;
   color: palette(primary, dark);
+}
+
+body {
+  // Font placed in body as Opera didn't like it in html
+  font: #{($base-font-size/16px)*1em}/#{$line-height-ratio} $font-primary;
+}
+
+.container {
+  @include outer-container;
 }
