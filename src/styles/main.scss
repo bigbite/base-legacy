@@ -1,12 +1,11 @@
 /*--------------------------------------------------*\
   Stucture:
   =========
-    - vendor:   Vendor styles
-    - utils:    Any utils that _don't_ output code
-    - base:     Base styles
-    - objects:  Reusable singular objects
-    - modules:  Modules typically contain multiple objects
-    - pages:    Any page specific styles
+    - vendor:      Vendor styles
+    - utils:       Any utils that _don't_ output code
+    - base:        Base styles
+    - components:  A singular object or a composition of objects
+    - pages:       Any page specific styles
 \*--------------------------------------------------*/
 
 // Vendor
@@ -21,12 +20,10 @@
 // Base
 @import 'base/base';
 
-// Objects
-@import 'objects/nav';
-
-// Modules
-@import 'modules/page-foot';
-@import 'modules/page-head';
+// Components
+@import 'components/nav';
+@import 'components/page-foot';
+@import 'components/page-head';
 
 // Pages
 @import 'pages/home';
