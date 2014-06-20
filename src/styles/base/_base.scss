@@ -2,6 +2,10 @@
   Base
 \*--------------------------------------------------*/
 
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
 html {
   overflow-y: scroll;
   min-height: 100%;
