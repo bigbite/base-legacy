@@ -12,13 +12,3 @@
 @function palette($palette, $tone: 'base') {
   @return map-get(map-get($palettes, $palette), $tone);
 }
-
-
-/**
- * returns a specified layout breakpoint
- * @param  {named property} $size the breakpoint size [large, laptop, ...]
- * @return {new breakpoint}       mapped neat breakpoint function
- */
-@function break($size) {
-  @return map-get($breakpoints, $size);
-}
