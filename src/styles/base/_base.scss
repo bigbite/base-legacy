@@ -5,11 +5,12 @@
 html {
   overflow-y: scroll;
   min-height: 100%;
+  font: #{($base-font-size/16px)*1em}/#{$line-height-ratio} $font-primary;
+  color: palette(primary, dark);
 }
 
 body {
-  font: #{($base-font-size/16px)*1em}/#{$line-height-ratio} $font-primary;
-  color: palette(primary, dark);
+
 }
 
 .container {
