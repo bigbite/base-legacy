@@ -1,0 +1,41 @@
+/*--------------------------------------------------*\
+  Base/Buttons
+\*--------------------------------------------------*/
+
+/**
+ * Base button styles
+ */
+%btn-base {
+  display: inline-block;
+  vertical-align: middle;
+  font: inherit;
+  text-align: center;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  overflow: visible;
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+
+/**
+ * Primary button
+ */
+.btn {
+  @extend %btn-base;
+  color: #fff;
+  background-color: palette(primary);
+  padding: $base-spacing-unit--half $base-spacing-unit;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: palette(grey);
+  }
+}

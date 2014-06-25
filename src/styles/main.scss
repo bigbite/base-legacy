@@ -6,6 +6,7 @@
     - base:        Base styles
     - components:  A singular object or a composition of objects
     - pages:       Any page specific styles
+    - helpers:     Helper classes
 \*--------------------------------------------------*/
 
 $border-box-sizing: false;
@@ -18,23 +19,28 @@ $border-box-sizing: false;
 @import 'vendor/normalize';
 
 // Utils
+@import 'utils/defaults';
 @import 'utils/functions';
 @import 'utils/mixins';
-@import 'utils/type';
 @import 'utils/colours';
 @import 'utils/grid-settings';
 
 // Base
+@import 'base/reset';
 @import 'base/base';
 @import 'base/type';
+@import 'base/links';
+@import 'base/buttons';
 
 // Components
-@import 'components/nav';
 @import 'components/page-head';
+@import 'components/page-nav';
 @import 'components/page-foot';
 
 // Pages
 @import 'pages/home';
 
-// Helpers, required last
-@import 'base/helpers';
+// Helpers
+@import 'helpers/spacing';
+@import 'helpers/type';
+@import 'helpers/widths';

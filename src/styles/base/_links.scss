@@ -1,0 +1,19 @@
+/*--------------------------------------------------*\
+  Base/Links
+\*--------------------------------------------------*/
+
+a {
+
+  &,
+  &:visited,
+  &:hover {
+    text-decoration: none;
+    color: palette(primary);
+    transition: all .3s ease-in-out;
+  }
+
+  &:active
+  &:focus {
+    color: palette(grey);
+  }
+}

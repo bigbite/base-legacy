@@ -1,11 +1,34 @@
 /*--------------------------------------------------*\
-  Base
+  Base/Base
 \*--------------------------------------------------*/
 
+/**
+ * border-box as default
+ */
 *, *:after, *:before {
   box-sizing: border-box;
 }
 
+
+/**
+ * Where `margin-bottom` is concerned, this value will be the same as the
+ * base line-height. This allows us to keep a consistent vertical rhythm.
+ */
+h1, h2, h3, h4, h5, h6, hgroup,
+ul, ol, dl,
+blockquote, p, address,
+table,
+fieldset, figure,
+pre,
+%margin-bottom {
+  margin-bottom: $base-spacing-unit;
+  margin-bottom: ($base-spacing-unit / $base-font-size) * 1rem;
+}
+
+
+/**
+ * Global
+ */
 html {
   overflow-y: scroll;
   min-height: 100%;
@@ -13,10 +36,10 @@ html {
   color: palette(primary, dark);
 }
 
-body {
 
-}
-
+/**
+ * Container set up
+ */
 .container {
   // @include outer-container;
 }
