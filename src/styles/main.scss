@@ -10,23 +10,17 @@
 
 $border-box-sizing: false;
 
-// Boubon + Neat
-// @import 'vendor/bourbon/bourbon';
-// @import 'vendor/neat/neat';
-
 // Vendor
 @import 'vendor/normalize';
 
 // Utils
 @import 'utils/functions';
 @import 'utils/mixins';
-@import 'utils/type';
 @import 'utils/colours';
 @import 'utils/grid-settings';
 
 // Base
 @import 'base/base';
-@import 'base/type';
 
 // Components
 @import 'components/nav';
