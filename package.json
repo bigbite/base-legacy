@@ -9,11 +9,11 @@
   "devDependencies": {
     "browser-sync": "~0.9.1",
     "connect": "~2.19.4",
+    "del": "^0.1.1",
     "gulp": "~3.7.0",
     "gulp-autoprefixer": "0.0.7",
     "gulp-bytediff": "^0.2.0",
     "gulp-changed": "~0.4.0",
-    "gulp-clean": "~0.3.0",
     "gulp-concat": "~2.2.0",
     "gulp-filter": "~0.4.1",
     "gulp-header": "~1.0.2",

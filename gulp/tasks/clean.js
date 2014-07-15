@@ -4,12 +4,9 @@
 
 // Modules
 var gulp = require('gulp');
-var clean = require('gulp-clean');
+var del = require('del');
 
 // Task
-gulp.task('clean', function() {
-  return gulp.src([
-      global.config.dist + '/assets',
-    ], {read: false})
-    .pipe(clean());
+gulp.task('clean', function(cb) {
+  del(global.config.dist + '/assets', cb);
 });
