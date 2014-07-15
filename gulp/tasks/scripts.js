@@ -15,14 +15,14 @@ var handleErrors = require('../util/handleErrors');
 gulp.task('scripts', function() {
   return gulp.src([
       global.config.src + '/scripts/helpers.js',
-      global.config.src + '/scripts/main.js'
+      global.config.src + '/scripts/app.js'
     ])
     .pipe(jshint())
     .pipe(jshint.reporter(stylish))
 
     // Uncomment below to fail on error
     // .pipe(jshint.reporter('fail')).on('error', handleErrors)
-    .pipe(concat('main.js'))
+    .pipe(concat('app.js'))
     .pipe(uglify())
     .pipe(header(global.config.banner))
     .pipe(gulp.dest(global.config.dist + '/assets/scripts'));
