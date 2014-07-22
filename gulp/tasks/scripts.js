@@ -23,7 +23,7 @@ gulp.task('scripts', function() {
     // Uncomment below to fail on error
     // .pipe(jshint.reporter('fail')).on('error', handleErrors)
     .pipe(concat('app.js'))
-    .pipe(uglify())
+    .pipe(uglify()).on('error', handleErrors)
     .pipe(header(global.config.banner))
     .pipe(gulp.dest(global.config.dist + '/assets/scripts'));
 });
