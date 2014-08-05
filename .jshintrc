@@ -4,7 +4,7 @@
   "esnext": true,
   "bitwise": true,
   "camelcase": true,
-  "curly": true,
+  "curly": false,
   "eqeqeq": true,
   "immed": true,
   "latedef": true,
@@ -16,7 +16,5 @@
   "unused": true,
   "strict": true,
   "trailing": false,
-  "globals" : {
-    "jQuery": true
-  }
+  "jQuery": true
 }
