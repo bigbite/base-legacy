@@ -14,8 +14,9 @@ var handleErrors = require('../util/handleErrors');
 // Task
 gulp.task('scripts', function() {
   return gulp.src([
-      global.config.src + '/scripts/helpers.js',
-      global.config.src + '/scripts/app.js'
+      global.config.src + '/scripts/app.js',
+      global.config.src + '/scripts/utils/**/*.js',
+      global.config.src + '/scripts/modules/**/*.js'
     ])
     .pipe(jshint())
     .pipe(jshint.reporter(stylish))
@@ -23,7 +24,7 @@ gulp.task('scripts', function() {
     // Uncomment below to fail on error
     // .pipe(jshint.reporter('fail')).on('error', handleErrors)
     .pipe(concat('app.js'))
-    .pipe(uglify()).on('error', handleErrors)
+    // .pipe(uglify()).on('error', handleErrors)
     .pipe(header(global.config.banner))
     .pipe(gulp.dest(global.config.dist + '/assets/scripts'));
 });
