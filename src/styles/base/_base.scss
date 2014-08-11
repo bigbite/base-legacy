@@ -36,6 +36,12 @@ html {
   color: palette(primary, dark);
 }
 
+/**
+ * Responsive images by default
+ */
+img {
+  max-width: 100%;
+}
 
 /**
  * Container set up
